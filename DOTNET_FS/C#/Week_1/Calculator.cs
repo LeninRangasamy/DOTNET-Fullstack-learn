@@ -46,6 +46,7 @@ class Calculator {
         break;
       default:
         Console.WriteLine("Input does not reached");
+        break;
     }
     return 0;
   }
