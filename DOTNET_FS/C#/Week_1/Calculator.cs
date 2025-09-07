@@ -17,7 +17,7 @@ class Calculator {
   public int calc(){
     //Menu
     Console.WriteLine("Choose operation\n1.Add\n2.Sub\n3.Mul\n4.Div\n5.Modulus");
-    int op=Covert.ToInt32(Console.ReadLine());
+    int op=Convert.ToInt32(Console.ReadLine());
     //input two numbers
     Console.WriteLine("Enter number 1");
     int num1=Convert.ToInt32(Console.ReadLine());
@@ -39,7 +39,7 @@ class Calculator {
         break;
       case 4:
         int d=num1/num2;
-        Console.WriteLine(c);
+        Console.WriteLine(d);
         break;
       case 5:
         Console.WriteLine(num1%num2);
