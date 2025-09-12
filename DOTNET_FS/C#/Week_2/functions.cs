@@ -1,7 +1,7 @@
 using System;
 class Application{
     public static void Main(string[] args){
-      C
+        
       //method 1
       Console.WriteLine("Method Type 1:");
       Method1 m1=new Method1();
