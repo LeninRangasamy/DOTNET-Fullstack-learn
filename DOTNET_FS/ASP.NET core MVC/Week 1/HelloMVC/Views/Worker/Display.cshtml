@@ -1,0 +1,27 @@
+@model HelloMVC.Models.WorkerViewModel
+
+<h2>Worker Details</h2>
+
+<form asp-action="Display" method="post">
+    <div>
+        <label asp-for="wid"></label>
+        <input asp-for="wid" class="form-control" />
+    </div>
+
+    <div>
+        <label asp-for="wname"></label>
+        <input asp-for="wname" class="form-control" />
+    </div>
+
+    <div>
+        <label asp-for="wsalary"></label>
+        <input asp-for="wsalary" class="form-control" />
+    </div>
+
+    <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+
+@if (ViewData["Message"] != null)
+{
+    <p style="color: green; margin-top: 10px;">@ViewData["Message"]</p>
+}
