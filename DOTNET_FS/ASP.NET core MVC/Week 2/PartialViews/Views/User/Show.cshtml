@@ -1,0 +1,10 @@
+@model IEnumerable<MyMVC.Models.UserModel>
+<!--@foreach(var u in Model){
+    @await Html.PartialAsync("_User",u);
+} -->
+<!--method 2-->
+@foreach(var u in Model){
+    <partial name="_User" model="u"></partial>
+}
+
+<!-- we use these only third method is dangrous -->
