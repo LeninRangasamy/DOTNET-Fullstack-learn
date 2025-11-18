@@ -1,0 +1,26 @@
+@model IEnumerable<ASPEmpty.Models.EmployeeModel>
+
+<h2>Employees list</h2>
+<a asp-action="Create">Add New</a>
+<table>
+  <tr>
+    <th>ID</td>
+    <th>Name</td>
+    <th>Salary</td>
+    <th>Actions</td>
+ </tr>
+ @foreach(var emp in Model){
+   <tr>
+     <td>@emp.id</td>
+     <td>@emp.name</td>
+     <td>@emp.salary</td>
+     <td>
+       <a asp-action="Details" asp-route-id="@emp.id">Details</a>
+       <a asp-action="Edit" asp-route-id="@emp.id">Edit</a>
+       <a asp-action="Delete" asp-route-id="@emp.id">Delete</a>
+     </td>
+   </tr>
+ }
+ </table>
+ 
+ 
